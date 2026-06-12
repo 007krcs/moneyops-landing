@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoneyOps — Your books, closed and proven</title>
+<meta name="description" content="An AI bookkeeper for Stripe-based solo founders. Verified monthly close, every number traceable to a source document, money-back accuracy guarantee. $49 per closed month.">
+<style>
+  :root{
+    --ink:#101418; --muted:#5b6672; --bg:#fafaf7; --card:#ffffff;
+    --accent:#0d6e5f; --accent-ink:#ffffff; --line:#e6e4dd; --gold:#b07d2b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+  .logo span{color:var(--accent)}
+  .pill{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--muted)}
+  .hero{padding:56px 0 40px;text-align:left}
+  h1{font-size:clamp(2rem,5.5vw,3.2rem);line-height:1.12;letter-spacing:-.03em;font-weight:800}
+  h1 em{font-style:normal;color:var(--accent)}
+  .sub{margin-top:18px;font-size:1.12rem;color:var(--muted);max-width:620px}
+  .cta-row{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;
+       padding:13px 22px;border-radius:10px;text-decoration:none;border:none;font-size:1rem;cursor:pointer}
+  .btn:hover{filter:brightness(1.08)}
+  .cta-note{font-size:.85rem;color:var(--muted)}
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.5rem;letter-spacing:-.02em;margin-bottom:8px}
+  .kicker{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gold)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.02rem;margin-bottom:6px}
+  .card p{font-size:.92rem;color:var(--muted)}
+  .step{display:flex;gap:14px;margin-top:18px;align-items:flex-start}
+  .step .n{flex:0 0 32px;height:32px;border-radius:50%;background:var(--ink);color:#fff;
+           display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem}
+  .step h3{font-size:1.02rem}
+  .step p{font-size:.92rem;color:var(--muted)}
+  .price-box{background:var(--ink);color:#fff;border-radius:18px;padding:34px;margin-top:22px;
+             display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+  .price-box .amount{font-size:2.6rem;font-weight:800;letter-spacing:-.03em}
+  .price-box .amount small{font-size:1rem;font-weight:500;color:#b9c2c9}
+  .price-box ul{list-style:none;font-size:.92rem;color:#cfd6db}
+  .price-box li{margin:4px 0;padding-left:22px;position:relative}
+  .price-box li::before{content:"✓";position:absolute;left:0;color:#7fd6c4;font-weight:700}
+  form{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+  input[type=email]{flex:1 1 260px;padding:13px 16px;border-radius:10px;border:1px solid var(--line);
+                    font-size:1rem;background:#fff}
+  select{padding:13px 12px;border-radius:10px;border:1px solid var(--line);font-size:.95rem;background:#fff;color:var(--ink)}
+  .ok{display:none;margin-top:14px;background:#e8f5f1;border:1px solid #bfe3d9;color:#0d6e5f;
+      border-radius:10px;padding:12px 16px;font-size:.95rem}
+  .faq dt{font-weight:700;margin-top:18px}
+  .faq dd{color:var(--muted);font-size:.95rem;margin-top:4px}
+  footer{padding:36px 0 48px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);margin-top:44px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">Money<span>Ops</span></div>
+    <div class="pill">Founding pilot — 25 seats</div>
+  </header>
+
+  <div class="hero">
+    <h1>Your books, closed and <em>proven</em>.</h1>
+    <p class="sub">MoneyOps is an AI bookkeeper for Stripe-based solo founders. It closes your month,
+    links <strong>every number to its source document</strong>, runs an independent verification pass,
+    and hands you a tax-ready package your CPA can file from. You review flagged items for ten minutes.
+    That's it.</p>
+    <div class="cta-row">
+      <a class="btn" href="#join">Join the founding pilot — $49/closed month</a>
+      <span class="cta-note">Free until your first verified close. Cancel anytime.</span>
+    </div>
+  </div>
+
+  <section>
+    <span class="kicker">Why this exists</span>
+    <h2>Bookkeeping is broken in three different ways</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>The Sunday-night shoebox</h3>
+        <p>You sell through Stripe all month, then lose an evening matching payouts, fees and receipts —
+        or you don't, and tax season becomes archaeology.</p>
+      </div>
+      <div class="card">
+        <h3>Incumbents raising prices</h3>
+        <p>QuickBooks raised Desktop prices ~49% in 2025 and again ~50% in 2026 — for software you still
+        have to operate yourself.</p>
+      </div>
+      <div class="card">
+        <h3>AI you can't trust</h3>
+        <p>AI bookkeeping tools guess categories silently. "Almost right" numbers are worse than no
+        numbers when it's your taxes on the line.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">How it works</span>
+    <h2>From connected to closed, with proof</h2>
+    <div class="step"><div class="n">1</div><div>
+      <h3>Connect Stripe + your bank</h3>
+      <p>One OAuth for Stripe, one for your bank (or upload statements). Revenue, fees, refunds and
+      spending flow in automatically.</p></div></div>
+    <div class="step"><div class="n">2</div><div>
+      <h3>The agent does the books</h3>
+      <p>Every transaction categorized and reconciled against payouts, invoices and receipts —
+      into a real double-entry ledger, not a spreadsheet.</p></div></div>
+    <div class="step"><div class="n">3</div><div>
+      <h3>A second agent checks the first</h3>
+      <p>An independent verifier re-walks the close and must sign off. Anything uncertain goes to your
+      ten-minute review queue — never silently guessed.</p></div></div>
+    <div class="step"><div class="n">4</div><div>
+      <h3>You get the verified close</h3>
+      <p>P&amp;L, cash position, anomalies, and a tax-ready package. Click any number and see the source
+      document behind it.</p></div></div>
+  </section>
+
+  <section>
+    <span class="kicker">The guarantee</span>
+    <h2>Priced on outcomes, backed by proof</h2>
+    <div class="price-box">
+      <div>
+        <div class="amount">$49 <small>/ closed month</small></div>
+        <p style="color:#b9c2c9;font-size:.9rem;margin-top:6px">Founding pilot price, locked for life.<br>
+        No close delivered = no charge.</p>
+      </div>
+      <ul>
+        <li>Every number traceable to its source document</li>
+        <li>Independent verification pass on every close</li>
+        <li>Money-back accuracy guarantee</li>
+        <li>Tax-ready package your CPA files from</li>
+        <li>We never move your money — we prepare, you approve</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="join">
+    <span class="kicker">Founding pilot</span>
+    <h2>Get your first month closed free</h2>
+    <p style="color:var(--muted);max-width:560px">25 founding seats. You get white-glove onboarding and
+    a lifetime $49 price; we get brutal feedback. Leave your email and we'll reach out within a day.</p>
+    <form id="waitlist" method="POST" action="">
+      <input type="email" name="email" required placeholder="you@yourcompany.com" aria-label="Email">
+      <select name="current_tool" aria-label="What do you use today?">
+        <option value="">What do you use today?</option>
+        <option>Spreadsheet / nothing</option>
+        <option>QuickBooks</option>
+        <option>Kick / Puzzle / other AI tool</option>
+        <option>Human bookkeeper</option>
+      </select>
+      <button class="btn" type="submit">Request a seat</button>
+    </form>
+    <div class="ok" id="ok">You're on the list — we'll be in touch within a day. (Seat requests are
+    answered in order received.)</div>
+  </section>
+
+  <section class="faq">
+    <span class="kicker">Questions</span>
+    <h2>The honest FAQ</h2>
+    <dl>
+      <dt>Do you file my taxes?</dt>
+      <dd>No. We prepare a verified, tax-ready package; you or your CPA file. We'd rather be the engine
+      your accountant trusts than pretend to be one.</dd>
+      <dt>What if a number is wrong?</dt>
+      <dd>You don't pay for that month, and we re-do it. Every miss is logged and root-caused — the
+      guarantee is the product.</dd>
+      <dt>Can you touch my money?</dt>
+      <dd>Never. Read-only connections. The agent prepares; only you act.</dd>
+      <dt>I'm not on Stripe — can I join?</dt>
+      <dd>The pilot is Stripe-first because it lets us verify revenue to the cent. Bank-only support
+      follows right after.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    MoneyOps prepares your books and reports; it is not a CPA firm and does not provide tax, legal or
+    investment advice. © 2026 MoneyOps.
+  </footer>
+</div>
+
+<script>
+  // Set to your Formspree (or similar) endpoint before deploying, e.g. https://formspree.io/f/abcdwxyz
+  var FORM_ENDPOINT = "";
+  var form = document.getElementById("waitlist");
+  form.addEventListener("submit", function(e){
+    if (!FORM_ENDPOINT) {
+      e.preventDefault();
+      var entries = JSON.parse(localStorage.getItem("waitlist") || "[]");
+      entries.push({email: form.email.value, tool: form.current_tool.value, at: new Date().toISOString()});
+      localStorage.setItem("waitlist", JSON.stringify(entries));
+      form.style.display = "none";
+      document.getElementById("ok").style.display = "block";
+    } else {
+      form.action = FORM_ENDPOINT;
+    }
+  });
+</script>
+</body>
+</html>
